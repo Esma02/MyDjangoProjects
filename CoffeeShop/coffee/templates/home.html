@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Feel Good Cafe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #4b2e2e, #3a5a40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 60px 50px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #4b2e2e;
+        }
+
+        .hero p {
+            color: #555;
+            margin-bottom: 35px;
+            font-size: 1.1rem;
+        }
+
+        .btn-coffee {
+            background-color: #3a5a40;
+            color: #fff;
+        }
+
+        .btn-coffee:hover {
+            background-color: #2f4a34;
+            color: #fff;
+        }
+
+        .btn-dessert {
+            background-color: #b23a3a;
+            color: #fff;
+        }
+
+        .btn-dessert:hover {
+            background-color: #962f2f;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>☕ Welcome to our cafe</h1>
+        <p>
+            Discover the most delightful way to enjoy coffee and dessert at Feel Good Cafe.
+        </p>
+
+        <div class="d-grid gap-3">
+            <!-- Django kullanıyorsan -->
+          
+            <!-- Normal HTML -->
+            <a href="/coffees" class="btn btn-lg btn-coffee">☕ Coffees</a>
+            <a href="/desserts" class="btn btn-lg btn-dessert">🍰 Desserts</a>
+        </div>
+    </div>
+
+</body>
+</html>

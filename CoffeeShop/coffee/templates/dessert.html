@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container my-4">
+    <h1 class="mb-4">Feel Good</h1>
+
+    <div class="row g-4">
+        {% for dessert in dessert %}
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card h-100">
+                    <img src="{{ dessert.image }}" class="card-img-top" alt="{{ dessert.name }}">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">{{ dessert.name }}</h5>
+                        <p class="card-text">${{ dessert.price }}</p>
+                        <a href="#" class="btn btn-primary mt-auto">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
